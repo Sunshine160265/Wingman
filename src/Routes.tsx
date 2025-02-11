@@ -49,6 +49,7 @@ const AppRoutes = () => {
             <Route path="/slack" element={<IntegrationCallbackPage />} />
             <Route path="/github-callback" element={<IntegrationCallbackPage />} />
             <Route path="/auth" element={<AuthPage />} />
+            <Route path="/organization-registration" element={<OrgRegistrationPage />} />
             </>
       }
       <Route path="/onboarding/registration" element={<SignUpPage />} />
