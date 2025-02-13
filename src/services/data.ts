@@ -25,7 +25,28 @@ export function reportsData(utcYear:number, utcMonth:number, utcAmdate:number, u
           hour: `${utcAmhour}`
         }
       },
-
+      {
+        isActive: true,
+        name: 'Evening Daily Summary Report',
+        sections: [
+          {
+            name: 'Pull Requests Pending Review',
+            resource: 'PULL_REQUEST',
+            sectionFilters: [
+              {
+                attribute: 'status',
+                metric: 'VALUE',
+                operator: 'EQUAL',
+                threshold: 'close'
+              }
+            ]
+          }
+        ],
+        schedule: {
+          day: `${utcMonth}/${utcPmdate}/${utcYear}`,
+          hour: `${utcPmhour}`
+        }
+      },
       {
         isActive: true,
         name: 'Send me a Sprint Summary once it has been completed',
