@@ -20,7 +20,7 @@ const AlertsPage = () => {
         <CssBaseline />
         <Layout title='Alerts'>
           <Typography
-            
+            sx={pageHeaderStyle}
           >
             Explore Alerts
           </Typography>
