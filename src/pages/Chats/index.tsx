@@ -33,7 +33,12 @@ const ChatsPage = () => {
       <CssBaseline />
       <Layout title='Chats'>
         <Card sx={{
-          
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginTop: '20ch',
+          width: '90%',
+          padding: '48px 150px',
+          borderRadius: '16px',
           boxShadow: '0px 2px 4px 0px rgba(25, 33, 61, 0.08)',
           border: '1px solid #F0F2F5',
           display: 'flex',
