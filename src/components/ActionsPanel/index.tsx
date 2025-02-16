@@ -13,7 +13,8 @@ const iconStyle = {
 const ActionsPanel = () => {
   return (
     <Box sx={{ display: 'flex', marginTop: '15px' }}>
-        
+        <CopyIcon sx={iconStyle} color='secondary'/>
+        <ShareIcon sx={iconStyle} color='secondary'/>
         <TagIcon sx={iconStyle} color='secondary'/>
         <BookmarkIcon sx={iconStyle} color='secondary'/>
         <MoreIcon sx={iconStyle} color='secondary'/>
