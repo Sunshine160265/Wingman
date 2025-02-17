@@ -37,7 +37,13 @@ const AgentEventAlertCard: React.FC<Props> = ({ content, title, date }) => {
         <TableContainer component={Paper}>
           <Table>
             <TableHead>
-              
+              <TableRow>
+                <TableCell>#PR</TableCell>
+                <TableCell>Open For</TableCell>
+                <TableCell>Opened By</TableCell>
+                <TableCell>Size</TableCell>
+                <TableCell>Link</TableCell>
+              </TableRow>
             </TableHead>
             <TableBody>
               {content.map((row, rowIndex) => (
