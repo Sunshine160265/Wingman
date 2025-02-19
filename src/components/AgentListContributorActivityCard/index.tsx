@@ -26,7 +26,8 @@ const AgentListCard: React.FC<Props> = ({ data, date }) => {
         <Table>
           <TableHead>
             <TableRow> 
-              
+              <TableCell>Contributor</TableCell>
+              <TableCell>Pull requests</TableCell>
               <TableCell>Reviews</TableCell>
               <TableCell>Comments</TableCell>
             </TableRow>
