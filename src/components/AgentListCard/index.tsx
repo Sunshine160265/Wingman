@@ -34,7 +34,13 @@ const AgentListCard: React.FC<Props> = ({ data, date }) => {
       <AgentChatCardHeader name='Wingman' date={date} />
        <TableContainer component={Paper}>
         <Table>
-          
+          <TableHead>
+            <TableRow>
+              {columns.map((column, index) => (
+                <TableCell key={index}>{normalizeColumnNames(column)}</TableCell>
+              ))}
+            </TableRow>
+          </TableHead>
           <TableBody>
             {data.map((row, rowIndex) => (
               <TableRow key={rowIndex}>
