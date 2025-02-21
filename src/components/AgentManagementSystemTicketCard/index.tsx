@@ -27,7 +27,14 @@ const AgentManagementSystemTicketCard: React.FC<Props> = ({data}) => {
           width: '280px',
           minHeight: '320px',
         }}>
-         
+          <Box
+            sx={{
+              display: 'flex',
+              marginBottom: '25px',
+            }}
+          >
+    
+          </Box>
           <Typography
             sx={{
               marginBottom: '25px',
