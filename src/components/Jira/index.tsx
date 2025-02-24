@@ -36,9 +36,7 @@ export const Jira1: React.FC<ChildProps> = ({componentStates, click}) => {
     <BackCard componentState={componentState}>
         <MainCard sx={{bgcolor: componentState ? 'white' : 'rgb(240 249 255)' }}>
             <Stack spacing={1} justifyContent="center" alignItems="center">
-                <CardTypography>
-                    Notify me when a ticket is at risk for the current sprint
-                </CardTypography>
+                
             </Stack>
         </MainCard>
       </BackCard>
