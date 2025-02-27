@@ -71,21 +71,7 @@ export const Jira2: React.FC<ChildProps2> = ({componentStates,setComponentStates
             <Stack spacing={1} justifyContent="center" alignItems="center">
                 <CardTypography>
                     Notify me when a P
-                    <span className={`numberspan ${componentState && 'align-middle'}`}>
-                        {componentState && (
-                        <span onClick={increment} className="arrowbutton">
-                            <img src={up} className="arrowsize1" alt="Up" />
-                        </span>
-                        )}
-                        <span className={`pr-1 ${componentState && 'arroundnumber'}`}>
-                        {bug}
-                        </span>
-                        {componentState && (
-                        <span onClick={decrement} className="arrowbutton">
-                            <img src={down} className="arrowsize2" alt="Down" />
-                        </span>
-                        )}
-                    </span>
+                    
                     bug is exceeding its SLA
                 </CardTypography>
             </Stack>
