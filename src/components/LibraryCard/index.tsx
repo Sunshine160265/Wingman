@@ -32,7 +32,16 @@ const LibraryCard: React.FC<Props> = ({ title, description, type, handleSendMess
         padding: '16px',
       }}
     >
-      
+      <Chip
+        sx={{
+          marginLeft: 'auto',
+          marginBottom: '10px',
+          fontWeight: '500',
+          borderRadius: '4px',
+          padding: '8px 0',
+        }}
+        label={type}
+      />
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
