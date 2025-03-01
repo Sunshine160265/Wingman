@@ -109,7 +109,23 @@ const Layout: React.FC<LayoutProps>  = ({ title, children, containerRef }) => {
         </Toolbar>
       </AppBar>
       <Sidebar open={open} setOpen={setOpen} conversationsList={conversationsList} />
-      
+      <Box 
+        ref={containerRef}
+        component="main" 
+        sx={{ 
+          mt: 8,
+          width: '100%',
+          height: '94vh',
+          bgcolor: 'primary.main',
+          borderRadius: '0 0 16px 16px',
+          padding: '40px 100px 40px 100px',
+          display: 'flex',
+          flexDirection: 'column',
+          overflowY: 'auto'
+        }}
+       >
+        {children}
+      </Box>
     </>
   );
 }
