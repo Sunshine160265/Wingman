@@ -108,7 +108,7 @@ const Layout: React.FC<LayoutProps>  = ({ title, children, containerRef }) => {
           </IconButton>
         </Toolbar>
       </AppBar>
-    
+      <Sidebar open={open} setOpen={setOpen} conversationsList={conversationsList} />
       <Box 
         ref={containerRef}
         component="main" 
